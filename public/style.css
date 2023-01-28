@@ -197,3 +197,19 @@ button:focus {
     top: -7px;
     left: -2px
 } 
+
+
+@media screen and (max-width: 769px) {
+    .sidebar--header > h3 {
+        font-size: 1rem !important;
+    }
+    .split {
+        display: block;
+    }
+    .editor, .sidebar {
+        width: 100%;
+        
+    }
+    
+    
+  }
