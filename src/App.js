@@ -72,10 +72,9 @@ export default function App() {
       {notes.length > 0 ? (
         <Split
           sizes={[30, 70]}
-          direction={windowWidth < 768 ? "vertical" : "horizontal"}
+          direction={windowWidth <= 768 ? "vertical" : "horizontal"}
           className="split"
         >
-            {/* <div>Width: {windowWidth} Height: {windowHeight}</div> */}
           <Sidebar
             notes={notes}
             currentNote={findCurrentNote()}
